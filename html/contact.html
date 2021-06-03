@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bakers - Contact Us</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/sk-logo.png" type="image/x-icon">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header class="logo">
+            <img src="/images/sk_bakes_logo.png" alt="logo" width="100px" height="80px">
+        </header>
+        <nav>
+            <ul class="nav-container">
+                <div class="nav-list">
+                    <li><a href="/html/main.html" >HOME</a></li>
+                    <li><a href="/html/products.html">PRODUCTS</a></li>
+                    <li><a href="#" class="active">CONTACT US</a></li>
+                </div>
+                <div class="nav-list2">
+                    <p>WELCOME</p>
+                </div>
+            </ul>
+        </nav>
+        <div class="contact-container"> 
+            <div class="form-container contact">
+                <form action="" id="contact-form">
+                    <div class="form-field">
+                        <label for="uname">Username</label>
+                        <input type="text" name="uname" id="uname" readonly>
+                    </div>
+                    <div class="form-field">
+                        <label for="mobile">Mobile No</label>
+                        <input type="tel" name="mobile" id="mobile" placeholder="Enter the Mobile no" autofocus required>
+                    </div>
+                    <div class="form-field">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" list="cities" placeholder="Enter the City" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="state">State</label>
+                        <select name="state" id="state" required>
+                            <optgroup label="State" >
+                                <option value="tamilnadu" selected>Tamil nadu</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="andra">Andra pradesh</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="maharastra">Maharastra</option>
+                                <option value="telungana">Telungana</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" cols="21" rows="2"
+                            placeholder="Your Comments" required></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <datalist id="cities">
+            <option value="Tirupur"></option>
+            <option value="Coimbatore"></option>
+            <option value="Erode"></option>
+            <option value="Madurai"></option>
+            <option value="Chennai"></option>
+        </datalist>
+        <footer class="footer">
+            <p>
+                Contact : 984xxxxx12
+            </p>
+            <p>
+                Email : sel*****@gmail.com
+            </p>
+        </footer>
+</body>
+</html>
